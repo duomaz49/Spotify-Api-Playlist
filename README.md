@@ -21,7 +21,7 @@ To use this application, follow these steps:
 4. Obtain a Spotify API client ID from the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/applications).
 5. Modify the clientID variable in the SpotifyApi.ts with your Spotify API client ID.
 6. Run the application using `npm run dev`.
-7. Open the application in your web browser on port http://localhost:5173/)
+7. Open the application in your web browser on port http://localhost:5173/
 
 **Note:** You need to set up environment variables properly for the Spotify API client ID to work.
 
