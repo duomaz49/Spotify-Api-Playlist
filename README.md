@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+# Spotify API Playlist Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+This project is a web application that allows users to search for songs, albums, or artists using the Spotify API and create playlists from the search results.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Search:** Users can search for songs, albums, or artists using the Spotify API.
+- **Playlist Management:** Users can view search results and add tracks to a playlist. They can also remove tracks from the playlist.
+- **Save Playlist:** Users can save the playlist to their Spotify account.
+- **Responsive Design:** The application is designed to be responsive and usable on various devices.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Usage
 
-- Configure the top-level `parserOptions` property like this:
+To use this application, follow these steps:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install`.
+4. Obtain a Spotify API client ID from the [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/applications).
+5. Modify the clientID variable in the SpotifyApi.ts with your Spotify API client ID.
+6. Run the application using `npm run dev`.
+7. Open the application in your web browser on port http://localhost:5173/)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+**Note:** You need to set up environment variables properly for the Spotify API client ID to work.
+
+## Technologies Used
+
+- React.js
+- TypeScript
+- Material-UI
+- Spotify Web API
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
