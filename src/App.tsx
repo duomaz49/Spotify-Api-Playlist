@@ -27,7 +27,7 @@ export default function App() {
 
     const addTrack = (track: Track) => {
         const existingTracks = playlistTracks.find((trackToSearch) => trackToSearch?.id === track?.id);
-        const newTrack = [...playlistTracks, track]
+        const newTrack = [track, ...playlistTracks]
 
         if (!existingTracks) {
             setPlaylistTracks(newTrack);
@@ -40,7 +40,7 @@ export default function App() {
     const removeTrack = (track: Track) => {
         const existingTracks = playlistTracks.filter((trackToSearch) => trackToSearch?.id !== track?.id);
         setPlaylistTracks(existingTracks);
-        setSearchResults(prevResults => [...prevResults, track]);
+        setSearchResults(prevResults => [track, ...prevResults]);
     }
 
     const updatePlayListName = (name: string) => {
